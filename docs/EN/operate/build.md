@@ -63,7 +63,7 @@ To execute the build script, open a terminal on your Mac and then copy and paste
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_iAPS.sh)"
+  https://raw.githubusercontent.com/Artificial-Pancreas/iAPS/main/scripts/Build_iAPS.sh)"
 ```
 
 The download is placed in your `Downloads` folder in a directory called `Build_iAPS`. The downloaded clone is found in a folder with the branch name, date and time encoded.
@@ -80,23 +80,18 @@ If you need it, you are most likely to get help in one of these groups:
 * [Facebook group: iAPS 4.0](https://www.facebook.com/groups/403549385863967)
 * Facebook groups like “Loop and Learn” and “Looped” may become useful too, but these groups are still mostly focussed on Loop
 
-### xDrip4iOS or Glucose Direct as CGM Source
+### xDrip4iOS as CGM Source
 
-Please note that LibreTransmitter is provided as part of iAPS, so you are not required to use either xDrip4iOS or Glucose Direct to interact with your compatible Libre sensor using iAPS.
+Please note that LibreTransmitter is provided as part of iAPS, so you are not required to use xDrip4iOS to interact with your compatible Libre sensor using iAPS.
 
-If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group”, you must also build that app from source with the same developer ID used for building iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern, and configure automatic signing files for you.
-
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildxDrip4iOS.sh)"
-```
+If you want to use xDrip4iOS as a CGM source via “shared app group”, you must also build that app from source with the same developer ID used for building iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern, and configure automatic signing files for you.
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildGlucoseDirect.sh)"
+  https://raw.githubusercontent.com/Artificial-Pancreas/iAPS/main/scripts/BuildxDrip4iOS.sh)"
 ```
 
-The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect` respectively. The downloaded clone is found in a folder with the branch name, date and time encoded.
+The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS`. The downloaded clone is found in a folder with the branch name, date and time encoded.
 
 
 ### Alternative Branch
@@ -105,12 +100,12 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_iAPS.sh)" - branch_name
+  https://raw.githubusercontent.com/Artificial-Pancreas/iAPS/main/scripts/Build_iAPS.sh)" - branch_name
 ```
 
 ### Maintenance Utilities
 
-Several maintenance utilities are availble with the Build Select Script which is typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, select Option 3 for Maintenance Utilities. Then choose from these options:
+Several maintenance utilities are availble with the Build Script. Issue the command below in your terminal, select Option 3 for Maintenance Utilities. Then choose from these options:
 
 1. Delete Old Downloads
 1. Clean Derived Data
@@ -119,7 +114,7 @@ Several maintenance utilities are availble with the Build Select Script which is
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
+  https://raw.githubusercontent.com/Artificial-Pancreas/iAPS/main/scripts/Build_iAPS.sh)"
 ```
 
 Once each option completes, you are returned to the top menu, so must select Maintenance Utilities again if desired.
